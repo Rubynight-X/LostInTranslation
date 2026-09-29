@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
 
 /**
  * This class provides the services of: <br/>
@@ -89,5 +90,9 @@ public class LanguageCodeConverter {
      */
     public int getNumLanguages() {
         return languageCodeToLanguage.size();
+    }
+
+    public List<String> getLanguages() {
+        return new ArrayList<>(languageToLanguageCode.keySet());
     }
 }
